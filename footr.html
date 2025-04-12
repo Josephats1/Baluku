@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+        }
+
+        .business-card {
+            display: flex;
+            width: 800px;
+            height: 250px;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Left Section */
+        .left-section {
+            background: linear-gradient(135deg, #1A1A2E, #0F3460);
+            flex: 1.2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .profile-pic {
+            width: 140px;
+            height: 140px;
+            border: 5px dotted #ccc;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-pic .circle {
+            width: 120px;
+            height: 120px;
+            background-color: #d9d9d9;
+            border-radius: 50%;
+        }
+
+        /* Right Section */
+        .right-section {
+            flex: 2;
+            padding: 30px 40px;
+            background-color: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .info h2 {
+            margin: 0;
+            color: #1A1A2E;
+            font-size: 28px;
+        }
+
+        .info .title {
+            margin: 5px 0 15px 0;
+            color: #666;
+            font-size: 18px;
+        }
+
+        .dots {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .dots span {
+            width: 10px;
+            height: 10px;
+            background-color: #1A1A2E;
+            border-radius: 50%;
+        }
+
+        .contact {
+            margin-top: 20px;
+        }
+
+        .contact p {
+            margin: 8px 0;
+            color: #333;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact p i {
+            margin-right: 10px;
+        }
+
+        /* Footer Section */
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            color: #666;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+        }
+
+        .footer .logo {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .footer .description {
+            font-size: 12px;
+            color: #999;
+            text-align: right;
+            line-height: 1.4;
+            max-width: 400px;
+        }
+
+        /* Divider Line */
+        .divider {
+            width: 1px;
+            background-color: #ccc;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="business-card">
+        <!-- Left Section -->
+        <div class="left-section">
+            <div class="profile-pic">
+                <div class="circle"></div>
+            </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="info">
+                <h2>Your Name</h2>
+                <p class="title">Project Manager</p>
+                <div class="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="contact">
+                    <p><i>📞</i> +000 123 456 789</p>
+                    <p><i>🌐</i> yourwebsite.com</p>
+                    <p><i>📍</i> Your address here, City, Zip</p>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="logo">LOGO NAME</div>
+                <div class="description">
+                    Lorem ipsum is simply dummy text of the printing and typesetting industry.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>o
