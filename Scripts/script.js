@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // ==================== Typing Effect ====================
     const typingElement = document.querySelector(".typing-effect");
     if (typingElement) {
-        const texts = ["Frontend Developer", "UI/UX Designer", "Web Developer"];
+        const texts = ["Software Engineer", "Freelance Fullstack Designer", "Digital Creator", "Travel Guide", , "UI/UX Designer", "Love Match Maker", "Screenwriter"];
         let count = 0;
         let index = 0;
         let currentText = "";
