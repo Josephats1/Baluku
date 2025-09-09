@@ -66,7 +66,7 @@
           <p><strong>Price:</strong> Contact for quote</p>
           <div class="button-container">
             <button class="view-more" onclick="openPopup('coding')">View More</button>
-            <button class="book-now">Get It</button>
+           <button class="book-now" onclick="sendWhatsAppMessage('coding')">Get It</button>
           </div>
         </div>
         <div class="service-card">
@@ -75,7 +75,7 @@
           <p><strong>Price:</strong> Contact for quote</p>
           <div class="button-container">
             <button class="view-more" onclick="openPopup('app')">View More</button>
-            <button class="book-now">Book Now</button>
+            <button class="book-now" onclick="sendWhatsAppMessage('app')">Book Now</button>
           </div>
         </div>
         <div class="service-card">
@@ -84,7 +84,7 @@
           <p><strong>Price:</strong> $72 Full Course</p>
           <div class="button-container">
             <button class="view-more" onclick="openPopup('web')">View More</button>
-            <button class="book-now">Talk Cody</button>
+           <button class="book-now" onclick="sendWhatsAppMessage('web')">Talk Cody</button>
           </div>
         </div>
       </div>
@@ -99,7 +99,7 @@
           <p><strong>Price:</strong> $1.3 per minute <strong>Mean:</strong> Video Call</p>
           <div class="button-container">
             <button class="view-more" onclick="openPopup('engagement')">View More</button>
-            <button class="book-now">Fun Time</button>
+            <button class="book-now" onclick="sendWhatsAppMessage('engagement')">Fun Time</button>
           </div>
         </div>
         <div class="service-card">
@@ -108,7 +108,7 @@
           <p><strong>Price:</strong> Contact for quote</p>
           <div class="button-container">
             <button class="view-more" onclick="openPopup('life')">View More</button>
-            <button class="book-now">Get Session</button>
+            <button class="book-now" onclick="sendWhatsAppMessage('life')">Get Session</button>
           </div>
         </div>
         <div class="service-card">
@@ -117,7 +117,7 @@
           <p><strong>Price:</strong> $1.3 per minute <strong>Mean:</strong> Video Call</p>
           <div class="button-container">
             <button class="view-more" onclick="openPopup('entertain')">View More</button>
-            <button class="book-now">We Jazz</button>
+           <button class="book-now" onclick="sendWhatsAppMessage('entertain')">We Jazz</button>
           </div>
         </div>
       </div>
@@ -133,7 +133,7 @@
           <div class="button-container">
             <button class="view-more" onclick="openPopup('loveconnect')">View More</button>
             <a href="love.html">
-              <button class="book-now">Get a Lover</button>
+              <button class="book-now" onclick="sendWhatsAppMessage('loveconnect')">Get a Lover</button>
             </a>
           </div>
         </div>
@@ -143,7 +143,7 @@
           <p><strong>Price:</strong> Contact for quote</p>
           <div class="button-container">
             <button class="view-more" onclick="openPopup('gift')">View More</button>
-            <button class="book-now">Gift Now</button>
+            <button class="book-now" onclick="sendWhatsAppMessage('gift')">Gift Now</button>
           </div>
         </div>
         <div class="service-card">
@@ -152,7 +152,7 @@
           <p><strong>Price:</strong> $7 for two vouches</p>
           <div class="button-container">
             <button class="view-more" onclick="openPopup('go')">View More</button>
-            <button class="book-now">Locate Me</button>
+            <button class="book-now" onclick="sendWhatsAppMessage('go')">Locate Me</button>
           </div>
         </div>
       </div>
@@ -193,74 +193,76 @@
     
     <section class="services1">
       <div class="container1">
-        <!-- Content Creator Card -->
-        <div class="service-card1">
-          <p>🎥</p>
-          <h3>Screenwriter</h3>
-          <p>Let's work together to develop a script that captures your audience's imagination and elevates your project.</p>
-          <div class="button-container1">
-            <button class="btn1 btn-primary1" onclick="openPopup('content-creator')">View More</button>
-            <button class="btn1 btn-secondary1">Get Script</button>
-          </div>
-        </div>
+<!-- Screenwriter -->
+<div class="service-card1">
+  <p>🎥</p>
+  <h3>Screenwriter</h3>
+  <p>Let's work together to develop a script that captures your audience's imagination and elevates your project.</p>
+  <div class="button-container1">
+    <button class="btn1 btn-primary1" onclick="openPopup('content-creator')">View More</button>
+    <button class="btn1 btn-secondary1" onclick="sendWhatsApp(this)">Get Script</button>
+  </div>
+</div>
 
-        <!-- Song Writer Card -->
-        <div class="service-card1">
-          <p>🎵</p>
-          <h3>Song Writer</h3>
-          <p>Craft heartfelt lyrics and melodies that resonate deeply with your audience through our songwriting expertise.</p>
-          <div class="button-container1">
-            <button class="btn1 btn-primary1" onclick="openPopup('song-writer')">View More</button>
-            <button class="btn1 btn-success1">Get Lyrics</button>
-          </div>
-        </div>
+<!-- Song Writer -->
+<div class="service-card1">
+  <p>🎵</p>
+  <h3>Song Writer</h3>
+  <p>We’ll create powerful lyrics and melodies that connect deeply with your audience.</p>
+  <div class="button-container1">
+    <button class="btn1 btn-primary1" onclick="openPopup('song-writer')">View More</button>
+    <button class="btn1 btn-secondary1" onclick="sendWhatsApp(this)">Get Lyrics</button>
+  </div>
+</div>
 
-        <!-- Graphic Designer Card -->
-        <div class="service-card1">
-          <p>🎨</p>
-          <h3>Graphic Designer</h3>
-          <p>Bring your ideas to life with visually stunning designs tailored to your brand and vision.</p>
-          <div class="button-container1">
-            <button class="btn1 btn-primary1" onclick="openPopup('graphic-designer')"> More</button>
-            <button class="btn1 btn-info">Get Designs</button>
-          </div>
-        </div>
+<!-- Graphic Designer -->
+<div class="service-card1">
+  <p>🎨</p>
+  <h3>Graphic Designer</h3>
+  <p>Bring your ideas to life with visually stunning designs tailored to your brand and vision.</p>
+  <div class="button-container1">
+    <button class="btn1 btn-primary1" onclick="openPopup('graphic-designer')">More</button>
+    <button class="btn1 btn-info" onclick="sendWhatsApp(this)">Get Designs</button>
+  </div>
+</div>
 
-        <!-- Content Writer Card -->
-        <div class="service-card1">
-          <p>
-            <img class="consult" src="https://cdn-icons-png.flaticon.com/128/9119/9119160.png" alt="HR Consultant" />
-          </p>
-          <h3>HR Consultant</h3>
-          <p>I bridge Employers with Employees. I help you find the right talent for your company.</p>
-          <div class="button-container1">
-            <button class="btn1 btn-primary1" onclick="openPopup('recruiter')">View More</button>
-            <button class="btn1 btn-warning">Careers</button>
-          </div>
-        </div>
+<!-- HR Consultant -->
+<div class="service-card1">
+  <p>
+    <img class="consult" src="https://cdn-icons-png.flaticon.com/128/9119/9119160.png" alt="HR Consultant" />
+  </p>
+  <h3>HR Consultant</h3>
+  <p>I bridge Employers with Employees. I help you find the right talent for your company.</p>
+  <div class="button-container1">
+    <button class="btn1 btn-primary1" onclick="openPopup('recruiter')">View More</button>
+    <button class="btn1 btn-warning" onclick="sendWhatsApp(this)">Careers</button>
+  </div>
+</div>
 
-        <!-- Social Media Manager Card -->
-        <div class="service-card1">
-          <p><img class="CD" src="https://cdn-icons-png.flaticon.com/128/11687/11687130.png" alt="CD Icon"></p>
-          <h3>Curriculum Designer</h3>
-          <p>Boost your online presence with strategic social media management tailored to your goals.</p>
-          <div class="button-container1">
-            <button class="btn1 btn-primary1" onclick="openPopup('social-media')">View More</button>
-            <button class="btn1 btn-success1">Consult</button>
-          </div>
-        </div>
+<!-- Curriculum Designer -->
+<div class="service-card1">
+  <p>
+    <img class="CD" src="https://cdn-icons-png.flaticon.com/128/11687/11687130.png" alt="CD Icon">
+  </p>
+  <h3>Curriculum Designer</h3>
+  <p>Boost your online presence with strategic social media management tailored to your goals.</p>
+  <div class="button-container1">
+    <button class="btn1 btn-primary1" onclick="openPopup('social-media')">View More</button>
+    <button class="btn1 btn-success1" onclick="sendWhatsApp(this)">Consult</button>
+  </div>
+</div>
 
-        <!-- Photographer Card -->
-        <div class="service-card1">
-          <p>📷</p>
-          <h3>Photographer</h3>
-          <p>Capture breathtaking moments with our professional photography services for any occasion.</p>
-          <div class="button-container1">
-            <button class="btn1 btn-primary1" onclick="openPopup('photographer')">View More</button>
-            <button class="btn1 btn-danger">Book Now</button>
-          </div>
-        </div>
-      </div>
+<!-- Photographer -->
+<div class="service-card1">
+  <p>📷</p>
+  <h3>Photographer</h3>
+  <p>Capture breathtaking moments with our professional photography services for any occasion.</p>
+  <div class="button-container1">
+    <button class="btn1 btn-primary1" onclick="openPopup('photographer')">View More</button>
+    <button class="btn1 btn-danger" onclick="sendWhatsApp(this)">Book Now</button>
+  </div>
+</div>
+
     </section>
 
     <section class="outer-card">

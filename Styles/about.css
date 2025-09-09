@@ -332,6 +332,36 @@
       max-width: 1200px;
       margin: 0 auto;
     }
+.mission-call{
+  display:inline-block;
+  background: linear-gradient(90deg,#9b59b6,#3498db,#2ecc71,#f1c40f,#e74c3c);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer{
+  0%{ background-position: 0% 50%; }
+  100%{ background-position: 100% 50%; }
+}
+p a {
+  display: inline-block;
+  color: #1cb43d;                 /* Neutral professional text color */
+  padding: 2px 4px;
+ font-size: small;
+  text-decoration: none;
+  border-bottom: 2px solid #e9e5f0; /* Minimal underline effect */
+  transition: all 0.3s ease;
+}
+
+p a:hover {
+  color: #40aadb;                  /* Darker text on hover */
+  border-bottom-color: #d4d63d;    /* Underline darkens */
+  transform: translateY(-1px);  /* Subtle lift effect */
+}
+
 
     .card-1 {
       background: rgba(255, 255, 255, 0.05);

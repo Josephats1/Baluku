@@ -212,18 +212,34 @@
     }
     
     h1 {
-      font-size: 1.5rem;
+      font-family: 'New Times Romans', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 1.6rem;
       line-height: 1.2;
       margin-bottom: 1rem;
     }
-    
-    .name {
-      color: var(--primary);
-      position: relative;
-      display: inline-block;
-    }
- 
-    
+.name {
+  font-size: 2rem;
+  position: relative;
+  font-family: 'Vladmir Script', 'Brush Script MT', cursive;
+  display: inline-block;
+  opacity: 0;
+  background: linear-gradient(90deg, #ff0080, #ff8c00, #40e0d0); /* 3 gradient colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeSlide 2s ease forwards;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
     h2 {
       font-size: 2rem;
       margin-bottom: 1.5rem;
@@ -671,9 +687,9 @@
       }
       
       h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
       }
-      
+      .name{font-size: 2.8rem;}
       .hero {
         padding: 6rem 1rem 2rem;
       }

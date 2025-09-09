@@ -158,3 +158,65 @@
         observer.observe(card);
       });
     };
+
+  function sendWhatsAppMessage(service) {
+    const phone = "256750366195"; // Your WhatsApp number
+    let message = "";
+
+    switch(service) {
+      // CODING SERVICES
+      case "coding":
+        message = "Hello, I would love to discus about your 'Custom Web Development' service.";
+        break;
+      case "app":
+        message = "Hello, I am interested in your 'Mobile App Development' service.";
+        break;
+      case "web":
+        message = "Hello, I’d like to know more about your 'Web Designing Course'.";
+        break;
+
+      // VIRTUAL COMPANION
+      case "engagement":
+        message = "Hello, I’d like to have an 'Engagement Chat' session with you.";
+        break;
+      case "life":
+        message = "Hello, I am interested in booking a 'Life Advice Session'.";
+        break;
+      case "entertain":
+        message = "Hello, I’d like to book an 'Entertainment Chat' with you.";
+        break;
+
+      // DATING COACH
+      case "loveconnect":
+        message = "Hello, I’d like to try the 'Love-Match' service.";
+        break;
+      case "gift":
+        message = "Hello, I am interested in your 'Gift Concierge' service.";
+        break;
+      case "go":
+        message = "Hello, I’d like to use your 'GoSuggest' travel recommendation service.";
+        break;
+
+      default:
+        message = "Hello, I’d like to learn more about your services.";
+    }
+
+    // Open WhatsApp chat with pre-filled message
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
+  }
+
+
+  function sendWhatsApp(button) {
+    const phoneNumber = "256750366195"; // your WhatsApp number
+    const serviceCard = button.closest(".service-card1");
+    const serviceName = serviceCard.querySelector("h3").innerText.trim();
+
+    const message = `Hello, I would love Us to discus more about "${serviceName}" service.`;
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
+  }
+
+
+
+
