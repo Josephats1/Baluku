@@ -79,6 +79,7 @@
   </nav>
    
     <main>
+       <div class="fireworks-interactive"></div>
       <!-- Hero Section -->
       <section class="hero">
         <h1>About Me</h1>
@@ -157,7 +158,7 @@
         <div class="card-1">
           <div class="title-1">FUN FACTS ABOUT ME</div>
           <p>I'm a Father to Children whose Mother have not been found.</p>
-          <p>I'm a Latter-Day Saint, Full-Time servant  <span class="mission-call">Zimbabwe Harare Mission</span>.</p>
+          <p>I'm a Latter-Day Saint, Full-Time servant. Ephisian 3:21 <span class="mission-call">Zimbabwe Harare Mission</span>.</p>
           <p>I'm a product of <span class="B">BYU</span> and <span class="B1">BeSelfless</span>. In most cases, I agree to disagree.</p>
           <p>My love for Wildlife and Documentaries makes NatGeo my favorite channel. Benevolently precede entry with a courteous knock, I jovially indulge in repose sans attire</p>
           <p>As I perceive adversaries as catalysts for growth and self-actualization, I effectively encapsulate the notion of foes, thereby rendering them obsolete. Hymns 227, 284, and 6.</p>
@@ -239,10 +240,11 @@
         <div class="footer-links">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About</a></li>
+           <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="attribution.html">Attributions</a></li>
           </ul>
         </div>
         
@@ -259,7 +261,7 @@
         
         <div class="footer-contact">
           <h3>Get In Touch</h3>
-          <p><i class="fas fa-map-marker-alt"></i> Masaka-UG, City View</p>
+          <p><i class="fas fa-map-marker-alt"></i> Masaka-UG</p>
           <p><i class="fas fa-envelope"></i> wecare@baluku.com</p>
           <p><i class="fas fa-phone-alt"></i> +256 7503 66195</p>
           <p><i class="fas fa-clock"></i> Mon-Fri: 9:00 - 17:00</p>
@@ -267,10 +269,36 @@
       </div>
       
       <div class="footer-bottom">
-        <p>COPYRIGHT&copy; BALUKU JOSEEPHATS</p>
+        <p>COPYRIGHT&copy; BALUKU JOSEPHATS</p>
       </div>
     </footer>
 
-    <script src="functions/about.js"></script>
+    <script src="functions/about.js"></script>  <script type="module">
+                import {Fireworks} from 'https://esm.run/fireworks-js';
+
+                const container = document.querySelector('.fireworks-interactive');
+
+                const options = {
+                    gravity: 1.4,
+                    opacity: 0.6,
+                    autoresize: true,
+                    acceleration: 1.02,
+                    intensity: 35,
+                    friction: 0.86,
+                    particles: 6,
+                    traceLength: 4,
+                    explosion: 6,
+                    mouse: {
+                        click: true,
+                        // Only show fireworks on click
+                        move: false,
+                        max: 3 // Max simultaneous explosions
+                    }
+                };
+
+                const fireworks = new Fireworks(container,options);
+                fireworks.start();
+            </script>
+
 </body>
 </html>
